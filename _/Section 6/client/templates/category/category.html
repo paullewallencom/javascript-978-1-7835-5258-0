@@ -1,0 +1,28 @@
+<template name="category">
+    {{#if isCheckingOut}}
+        {{>checkout}}
+    {{/if}}
+    <h1>{{categoryName}}</h1>
+        {{#each products}}
+            {{>product}}
+        {{/each}}
+</template>
+<template name="categoryAdmin">
+  <div class="col-md-12">
+      <div class="col-md-6 form-group">
+          <label class="control-label">Category Name</label>
+          <input type="text" id="categoryName" class="form-control input-sm"/>
+          <div class="control-group">
+              <label class="control-label"></label>
+              <div class="controls">
+                  <button class="btn btn-info btn-md">
+                      <i class="fa fa-database addCategory">
+                          Add Category
+                      </i>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</template>
+

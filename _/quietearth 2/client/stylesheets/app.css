@@ -1,0 +1,19 @@
+ol, ul, li,form, label{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    margin-top:70px;
+}
+
+.avatar-upload{
+    margin-top:5px;
+}
+.saveProfileBtn{
+    margin-top:25px;
+}

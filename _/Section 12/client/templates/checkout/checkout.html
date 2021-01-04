@@ -1,0 +1,8 @@
+<template name="checkout">
+    {{#if isCheckingOut}}
+        {{#panel header="Checkout"}}
+            {{currency cartTotal}}
+            {{>paypalCreditCardForm}}
+        {{/panel}}
+    {{/if}}
+</template>
